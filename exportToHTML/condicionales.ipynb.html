@@ -1,0 +1,169 @@
+<html>
+<head>
+<title>condicionales.ipynb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+condicionales.ipynb</font>
+</center></td></tr></table>
+<pre><span class="s0">#%% md 
+</span><span class="s1"># Booleanos y operadores 
+ 
+## ¿Qué es un booleano? 
+ 
+Un booleano es un tipo de dato en programación que puede tener dos valores posibles: verdadero (true) o falso (false). Se utiliza para representar valores lógicos y para tomar decisiones en la programación. 
+ 
+Por ejemplo, si en un programa se quiere verificar si un número es mayor que otro, se puede utilizar un booleano para almacenar el resultado de esa comparación. Si el número es mayor, el booleano tendrá el valor &quot;verdadero&quot; (true), y si no es mayor, tendrá el valor &quot;falso&quot; (false). 
+ 
+Los booleanos son muy útiles en la programación porque permiten hacer comparaciones y tomar decisiones de manera eficiente y precisa. Además, son muy sencillos de usar y se pueden combinar con otros tipos de datos y operadores para crear expresiones lógicas más complejas. 
+ 
+En Python, el tipo de dato booleano se representa por dos valores: `True` (verdadero) y `False` (falso). Estos valores son palabras reservadas en el lenguaje y siempre deben ir escritas con la primera letra en mayúscula y las demás en minúsculas. 
+ 
+Por ejemplo, si se quiere asignar un valor booleano a una variable en Python, se puede hacer de la siguiente manera: 
+</span><span class="s0">#%% 
+</span><span class="s1">x = </span><span class="s2">True</span>
+<span class="s1">y = </span><span class="s2">False</span>
+<span class="s0">#%% md 
+</span><span class="s1">En este caso, la variable `x` tendría el valor booleano verdadero (`True`) y la variable `y` tendría el valor booleano falso (`False`). 
+ 
+Los valores booleanos también se pueden utilizar en expresiones lógicas y comparaciones en Python, como por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = </span><span class="s3">10</span>
+<span class="s1">b = </span><span class="s3">5</span>
+<span class="s1">c = a &gt; b   </span><span class="s0"># c tendrá el valor True porque a es mayor que b</span>
+<span class="s1">d = a == b  </span><span class="s0"># d tendrá el valor False porque a no es igual a b=5</span>
+<span class="s0">#%% md 
+</span><span class="s1">En este ejemplo, la variable c tendrá el valor verdadero (True) porque la expresión a &gt; b es verdadera, mientras que la variable d tendrá el valor falso (False) porque la expresión a == b es falsa. 
+ 
+En resumen, los valores booleanos en Python son verdadero (True) y falso (False) y se utilizan para representar valores lógicos y para tomar decisiones en la programación. 
+ 
+ 
+</span><span class="s0">#%% md 
+</span><span class="s1">## Operadores de comparación 
+ 
+En Python, los operadores de comparación se utilizan para comparar dos valores y producir un valor booleano (verdadero o falso) como resultado. Estos operadores se utilizan con frecuencia en expresiones lógicas y de control de flujo, como las estructuras de decisión (if, else, elif) y los bucles (while, for). A continuación, te explico los operadores de comparación más comunes en Python: 
+ 
+Igualdad (==): este operador comprueba si dos valores son iguales y devuelve True si lo son, y False si no lo son. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s3">5 </span><span class="s1">== </span><span class="s3">5  </span><span class="s0"># True</span>
+<span class="s3">5 </span><span class="s1">== </span><span class="s3">6  </span><span class="s0"># False</span>
+<span class="s0">#%% md 
+</span><span class="s1">Desigualdad (!=): este operador comprueba si dos valores son diferentes y devuelve True si lo son, y False si no lo son. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s3">5 </span><span class="s1">!= </span><span class="s3">5  </span><span class="s0"># False</span>
+<span class="s3">5 </span><span class="s1">!= </span><span class="s3">6  </span><span class="s0"># True</span>
+<span class="s0">#%% md 
+</span><span class="s1">Mayor que (&gt;): este operador comprueba si el primer valor es mayor que el segundo valor y devuelve True si lo es, y False si no lo es. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s3">5 </span><span class="s1">&gt; </span><span class="s3">3  </span><span class="s0"># True</span>
+<span class="s3">5 </span><span class="s1">&gt; </span><span class="s3">6  </span><span class="s0"># False</span>
+<span class="s0">#%% md 
+</span><span class="s1">Menor que (&lt;): este operador comprueba si el primer valor es menor que el segundo valor y devuelve True si lo es, y False si no lo es. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s3">5 </span><span class="s1">&lt; </span><span class="s3">7  </span><span class="s0"># True</span>
+<span class="s3">5 </span><span class="s1">&lt; </span><span class="s3">4  </span><span class="s0"># False</span>
+<span class="s0">#%% md 
+</span><span class="s1">Mayor o igual que (&gt;=): este operador comprueba si el primer valor es mayor o igual que el segundo valor y devuelve True si lo es, y False si no lo es. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s3">5 </span><span class="s1">&gt;= </span><span class="s3">5  </span><span class="s0"># True</span>
+<span class="s3">5 </span><span class="s1">&gt;= </span><span class="s3">6  </span><span class="s0"># False</span>
+<span class="s0">#%% md 
+</span><span class="s1">Menor o igual que (&lt;=): este operador comprueba si el primer valor es menor o igual que el segundo valor y devuelve True si lo es, y False si no lo es. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s3">5 </span><span class="s1">&lt;= </span><span class="s3">7  </span><span class="s0"># True</span>
+<span class="s3">5 </span><span class="s1">&lt;= </span><span class="s3">4  </span><span class="s0"># False</span>
+<span class="s0">#%% md 
+</span><span class="s1">En resumen, los operadores de comparación en Python son iguales (==), desiguales (!=), mayor que (&gt;), menor que (&lt;), mayor o igual que (&gt;=) y menor o igual que (&lt;=). Estos operadores se utilizan para comparar dos valores y producir un valor booleano como resultado. 
+</span><span class="s0">#%% md 
+</span><span class="s1">## Operadores lógicos 
+En Python, los operadores lógicos se utilizan para combinar expresiones booleanas y producir un valor booleano como resultado. Los operadores lógicos más comunes en Python son `and`, `or` y `not`. A continuación, te explico cada uno de ellos: 
+ 
+`and`: este operador devuelve `True` si ambas expresiones booleanas que combina son verdaderas, y `False` en cualquier otro caso. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = </span><span class="s3">10</span>
+<span class="s1">b = </span><span class="s3">5</span>
+<span class="s1">c = a &gt; b </span><span class="s2">and </span><span class="s1">b &gt; </span><span class="s3">0  </span><span class="s0"># c tendrá el valor True porque ambas expresiones son verdaderas</span>
+<span class="s1">d = a &gt; b </span><span class="s2">and </span><span class="s1">b &lt; </span><span class="s3">0  </span><span class="s0"># d tendrá el valor False porque una de las expresiones es falsa</span>
+<span class="s0">#%% md 
+</span><span class="s1">`or`: este operador devuelve `True` si al menos una de las expresiones booleanas que combina es verdadera, y `False` en cualquier otro caso. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = </span><span class="s3">10</span>
+<span class="s1">b = </span><span class="s3">5</span>
+<span class="s1">c = a &gt; b </span><span class="s2">or </span><span class="s1">b &lt; </span><span class="s3">0  </span><span class="s0"># c tendrá el valor True porque al menos una expresión es verdadera</span>
+<span class="s1">d = a &lt; b </span><span class="s2">or </span><span class="s1">b &lt; </span><span class="s3">0  </span><span class="s0"># d tendrá el valor False porque ninguna de las expresiones es verdadera</span>
+<span class="s0">#%% md 
+</span><span class="s1">`not`: este operador invierte el valor booleano de una expresión. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = </span><span class="s3">10</span>
+<span class="s1">b = </span><span class="s3">5</span>
+<span class="s1">c = </span><span class="s2">not</span><span class="s1">(a &gt; b)  </span><span class="s0"># c tendrá el valor False porque la expresión a &gt; b es verdadera</span>
+<span class="s1">d = </span><span class="s2">not</span><span class="s1">(a &lt; b)  </span><span class="s0"># d tendrá el valor True porque la expresión a &lt; b es falsa</span>
+<span class="s0">#%% md 
+</span><span class="s1">stos operadores se utilizan con frecuencia en expresiones lógicas y de control de flujo en Python, como las estructuras de decisión (if, else, elif) y los bucles (while, for). 
+ 
+En resumen, los operadores lógicos en Python son and, or y not. Estos operadores se utilizan para combinar expresiones booleanas y producir un valor booleano como resultado. El operador and devuelve True solo si ambas expresiones son verdaderas, el operador or devuelve True si al menos una de las expresiones es verdadera, y el operador not devuelve el valor booleano contrario al de la expresión que se le pasa como argumento. 
+</span><span class="s0">#%% md 
+</span><span class="s1">## Operadores de identidad 
+ 
+En Python, los operadores de identidad se utilizan para comparar si dos objetos tienen la misma identidad (es decir, si se refieren al mismo objeto en la memoria). Los operadores de identidad más comunes en Python son is y is not. 
+ 
+El operador is devuelve True si los dos objetos comparados tienen la misma identidad, y False si no la tienen. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = [</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s1">]</span>
+<span class="s1">b = a</span>
+<span class="s1">c = [</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s1">]</span>
+
+<span class="s1">print(a </span><span class="s2">is </span><span class="s1">b)  </span><span class="s0"># True, a y b se refieren al mismo objeto en la memoria</span>
+<span class="s1">print(a </span><span class="s2">is </span><span class="s1">c)  </span><span class="s0"># False, a y c son objetos diferentes en la memoria</span>
+
+<span class="s0">#%% md 
+</span><span class="s1">El operador is not devuelve True si los dos objetos comparados no tienen la misma identidad, y False si la tienen. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = [</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s1">]</span>
+<span class="s1">b = a</span>
+<span class="s1">c = [</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s1">]</span>
+
+<span class="s1">print(a </span><span class="s2">is not </span><span class="s1">b)  </span><span class="s0"># False, a y b se refieren al mismo objeto en la memoria</span>
+<span class="s1">print(a </span><span class="s2">is not </span><span class="s1">c)  </span><span class="s0"># True, a y c son objetos diferentes en la memoria</span>
+
+<span class="s0">#%% md 
+</span><span class="s1">Estos operadores de identidad son útiles para comparar objetos complejos como listas, diccionarios o clases personalizadas, ya que comparan la identidad en memoria de los objetos, en lugar de comparar solo sus valores. 
+ 
+En resumen, los operadores de identidad en Python son is y is not. Estos operadores se utilizan para comparar si dos objetos tienen la misma identidad en memoria. El operador is devuelve True si los dos objetos tienen la misma identidad, y False si no la tienen. El operador is not devuelve True si los dos objetos no tienen la misma identidad, y False si la tienen. 
+</span><span class="s0">#%% md 
+</span><span class="s1">## Operadores de pertenencia 
+ 
+En Python, los operadores de pertenencia se utilizan para comprobar si un objeto está contenido dentro de otro objeto. Los operadores de pertenencia más comunes en Python son in y not in. 
+ 
+El operador in devuelve True si el primer objeto se encuentra dentro del segundo objeto, y False si no lo está. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = [</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s1">]</span>
+<span class="s1">b = </span><span class="s3">2</span>
+
+<span class="s1">print(b </span><span class="s2">in </span><span class="s1">a)  </span><span class="s0"># True, 2 se encuentra en la lista a</span>
+<span class="s1">print(</span><span class="s3">4 </span><span class="s2">in </span><span class="s1">a)  </span><span class="s0"># False, 4 no se encuentra en la lista a</span>
+
+<span class="s0">#%% md 
+</span><span class="s1">El operador not in devuelve True si el primer objeto no se encuentra dentro del segundo objeto, y False si sí está. Por ejemplo: 
+</span><span class="s0">#%% 
+</span><span class="s1">a = [</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s1">]</span>
+<span class="s1">b = </span><span class="s3">2</span>
+
+<span class="s1">print(b </span><span class="s2">not in </span><span class="s1">a)  </span><span class="s0"># False, 2 se encuentra en la lista a</span>
+<span class="s1">print(</span><span class="s3">4 </span><span class="s2">not in </span><span class="s1">a)  </span><span class="s0"># True, 4 no se encuentra en la lista a</span>
+
+<span class="s0">#%% md 
+</span><span class="s1">Estos operadores de pertenencia son útiles para comprobar si un objeto está dentro de una lista, tupla, conjunto o diccionario, por ejemplo. 
+ 
+En resumen, los operadores de pertenencia en Python son in y not in. Estos operadores se utilizan para comprobar si un objeto está contenido dentro de otro objeto. El operador in devuelve True si el primer objeto está dentro del segundo objeto, y False si no lo está. El operador not in devuelve True si el primer objeto no está dentro del segundo objeto, y False si sí está.</span></pre>
+</body>
+</html>
